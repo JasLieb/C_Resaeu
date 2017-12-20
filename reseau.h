@@ -7,8 +7,24 @@
 #include <string.h>
 #include <stdlib.h>
 
+typedef struct{
+    int nbVoiture;
+    int nbMoto;
+    float prixForfait[2];
+    float prixHorsForfait[2];
+}HereData;
+
 typedef struct {
-	long a;
-	char op[1];
-	long b;
-}Cal;
+	int etagePark;
+	int nbPlace;
+	float prixForfait;
+	float prixHorsForfait;
+}ServerData;
+
+typedef struct {
+	char plaque[10];
+	char categorie;
+	int dureeEnvisagee;
+}BorneData;
+
+void getInfo();
